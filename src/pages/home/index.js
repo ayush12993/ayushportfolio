@@ -1,4 +1,11 @@
-import '../../css/app.css'
+import '../../css/app.css';
+import Tooltip from "../../component/tooltip/index";
+import nodejs from "../../images/nodejs.png";
+import laravel from "../../images/laravel.png";
+import wordpress from "../../images/wordpress.jpeg";
+import shopify from "../../images/shopify.svg";
+import woocommerce from "../../images/woocommerce.jpg";
+import webflow from "../../images/webflow.png";
 function Home(){
     return (
         <div className="blog">
@@ -43,7 +50,7 @@ function Home(){
 
                     <div className="blog-article">
                         <img src="https://ouch-cdn2.icons8.com/SnJIana3cVsQvp2fMCM1Zp6s3k7BVcD8MoaaEFxU3Yk/rs:fit:368:368/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvMTQ4/LzQ0MTM5NWNmLTRl/NTktNGFlNi1iOGI2/LTBmMDg2Mzg5MzBh/Zi5wbmc.png" alt="" />
-                            <h2>Experienced developer</h2>
+                            <h2>3+ years experienced developer</h2>
                             <div className="blog-detail">
                                 <span>By Ayush Jain</span>
                                 <span>5 Min Read</span>
@@ -51,27 +58,85 @@ function Home(){
                             Hi, I Ayush, I am an experienced web developer, hands on experience in developing unique projects that is one of a kind, with experience in other tech stacks such as Wordpress, WooCommerce, Webflow, NodeJS, Laravel(only preferred for 1-2 hour base projects).<br/> I have experience in android also, I know the working of it also. <br/>I do Leetcode in Java to challange my programming skills and hone in it.<br/>
                         My current tech stack are -
                         <ul>
-                            <li>
+       
+        <li>
+                         <div >
+      <Tooltip 
+        content="This is a node js image which is related to nodejs technology."
+        imageUrl={nodejs}
+      >
                                 NodeJS
-                            </li>
-                            <li>
+                            
+      </Tooltip>
+    </div>
+    </li>
+    <li>
+                         <div >
+      <Tooltip 
+        content="This is a laravel image which is related to laravel technology."
+        imageUrl={laravel}
+      >
                                 Laravel
-                            </li>
-                            <li>
+                            
+      </Tooltip>
+    </div>
+    </li>
+
+
+        <li>
+                         <div >
+      <Tooltip 
+        content="This is a wordpress image which is related to wordpress technology."
+        imageUrl={wordpress}
+      >
                                 Wordpress
-                            </li>
-                            <li>
+                            
+      </Tooltip>
+    </div>
+    </li>
+
+    <li>
+                         <div >
+      <Tooltip 
+        content="This is a shopify image which is related to shopify technology."
+        imageUrl={shopify}
+      >
                                 Shopify
-                            </li>
-                            <li>
-                                Woo-commerce
-                            </li>
-                            <li>
+                            
+      </Tooltip>
+    </div>
+    </li>
+                     
+
+
+
+   <li>
+                         <div >
+      <Tooltip 
+        content="This is a woocommerce image which is related to woocomerce technology."
+        imageUrl={woocommerce}
+      >
+                                Woocommerce
+                            
+      </Tooltip>
+    </div>
+    </li>
+   <li>
+                         <div >
+      <Tooltip 
+        content="This is a webflow image which is related to webflow technology."
+        imageUrl={webflow}
+      >
                                 Webflow
-                            </li>
+                            
+      </Tooltip>
+    </div>
+    </li>
+                           
+
                         </ul>
 
-                            <a className="not-big-screen-text" href="">
+                            <a className="not-big-screen-text" href="/contact">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-corner-down-right" viewBox="0 0 24 24">
                                     <path d="M15 10l5 5-5 5" />
                                     <path d="M4 4v7a4 4 0 004 4h12" />

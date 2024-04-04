@@ -1,0 +1,18 @@
+.tooltip-wrapper {
+  position: relative;
+  display: inline;
+}
+
+.tooltip {
+  position: absolute;
+  padding: 10px;
+  border-radius: 4px;
+  z-index: 1;
+  max-width: auto;
+  height: 100%
+}
+
+.tooltip img {
+  max-width: 100%;
+  display: block;
+}
