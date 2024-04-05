@@ -232,7 +232,7 @@ body {
     line-height: 1.5;
     margin: 14px 0;
 }
-.blog-article a button {
+.blog-article a {
     color: #323232;
     text-decoration: none;
     font-size: 26px;
@@ -244,7 +244,7 @@ body {
     border-top: 1px solid #94918f;
     padding-top: 14px;
 }
-.blog-article a button svg {
+.blog-article a svg {
     width: 26px;
     margin-right: 10px;
 }
