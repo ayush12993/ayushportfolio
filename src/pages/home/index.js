@@ -6,11 +6,16 @@ import wordpress from "../../images/wordpress.jpeg";
 import shopify from "../../images/shopify.svg";
 import woocommerce from "../../images/woocommerce.jpg";
 import webflow from "../../images/webflow.png";
+import einsolution from "../../images/einsolution.png";
+import chaturbhujhospital from "../../images/chaturbhujhospital.png";
+import githubprofile from "../../images/githubprofile.png";
+import ayush from "../../images/ayush.png";
+import linkedinprofile from "../../images/linkedinprofile.png";
 function Home(){
     return (
         <div className="blog">
             <div className="blog-part is-menu">
-                <a href="/" className="blog-menu">Profile</a>
+                <a href="/" className="blog-menu">About</a>
                 <a href="/work" className="blog-menu">
                     Work
                     <svg fill="none" stroke="currentColor" stroke-width=".7" stroke-linecap="round" stroke-linejoin="round" className="feather feather-arrow-up-right" viewBox="0 0 24 24">
@@ -24,8 +29,23 @@ function Home(){
                         <path d="M7 17L17 7M7 7h10v10" />
                     </svg>
                 </a>
+
+<a href="https://www.linkedin.com/in/ayush-jain-654617145/" className="blog-menu ">
+                  <div >
+      <Tooltip 
+        content="_________________________________________"
+        imageUrl={linkedinprofile}
+      >
+                               <u> Profile  <svg fill="none" stroke="currentColor" stroke-width=".7" stroke-linecap="round" stroke-linejoin="round" className="feather feather-arrow-up-right" viewBox="0 0 24 24">
+                        <path d="M7 17L17 7M7 7h10v10" />
+                    </svg></u>
+                            
+      </Tooltip>
+    </div>
+                </a>
+
                 <a href="mailto:ayush2202ksr@gmail.com" className="blog-menu mention">✉ ayush.me</a>
-                <a href="https://www.linkedin.com/in/ayush-jain-654617145/" className="blog-menu subscribe">Profile</a>
+                
             </div>
 
             <div className="blog-header blog-is-sticky">
@@ -55,7 +75,15 @@ function Home(){
                                 <span>By Ayush Jain</span>
                                 <span>5 Min Read</span>
                             </div>
-                            Hi, I Ayush, I am an experienced web developer, hands on experience in developing unique projects that is one of a kind, with experience in other tech stacks such as Wordpress, WooCommerce, Webflow, NodeJS, Laravel(only preferred for 1-2 hour base projects).<br/> I have experience in android also, I know the working of it also. <br/>I do Leetcode in Java to challange my programming skills and hone in it.<br/>
+                                            
+      <Tooltip 
+        content="___________________________"
+        imageUrl={ayush}
+      >
+                 <u>  Hi, I             Ayush,</u>
+                            
+      </Tooltip>
+     I am an experienced web developer, hands on experience in developing unique projects that is one of a kind, with experience in other tech stacks such as Wordpress, WooCommerce, Webflow, NodeJS, Laravel(only preferred for 1-2 hour base projects).<br/> I have experience in android also, I know the working of it also. <br/>I do Leetcode in Java to challange my programming skills and hone in it.<br/>
                         My current tech stack are -
                         <ul>
        
@@ -65,7 +93,7 @@ function Home(){
         content="This is a node js image which is related to nodejs technology."
         imageUrl={nodejs}
       >
-                                NodeJS
+                               <u> NodeJS</u>
                             
       </Tooltip>
     </div>
@@ -76,7 +104,7 @@ function Home(){
         content="This is a laravel image which is related to laravel technology."
         imageUrl={laravel}
       >
-                                Laravel
+                               <u> Laravel</u>
                             
       </Tooltip>
     </div>
@@ -89,7 +117,7 @@ function Home(){
         content="This is a wordpress image which is related to wordpress technology."
         imageUrl={wordpress}
       >
-                                Wordpress
+                               <u> Wordpress</u>
                             
       </Tooltip>
     </div>
@@ -98,10 +126,10 @@ function Home(){
     <li>
                          <div >
       <Tooltip 
-        content="This is a shopify image which is related to shopify technology."
+        content="This is a shopify image which is related to shopify technology. We recommend & use shopify over woo commerce"
         imageUrl={shopify}
       >
-                                Shopify
+                               <u> Shopify</u>
                             
       </Tooltip>
     </div>
@@ -116,7 +144,7 @@ function Home(){
         content="This is a woocommerce image which is related to woocomerce technology."
         imageUrl={woocommerce}
       >
-                                Woocommerce
+                               <u> Woocommerce</u>
                             
       </Tooltip>
     </div>
@@ -127,7 +155,7 @@ function Home(){
         content="This is a webflow image which is related to webflow technology."
         imageUrl={webflow}
       >
-                                Webflow
+                                <u>Webflow</u>
                             
       </Tooltip>
     </div>
@@ -170,7 +198,15 @@ function Home(){
                         <div className="blog-right-page-subtitle">A full hospital software for managing hospital</div>
                         <a className="sidebar-moving-link" href="https://chaturbhujhospital.com">
 
-                            Click me
+                                                 <div >
+      <Tooltip 
+        content="__________________"
+        imageUrl={chaturbhujhospital}
+      >
+                              <u>  Click me</u>
+                            
+      </Tooltip>
+    </div>
                         </a>
                     </div>
 
@@ -183,14 +219,32 @@ function Home(){
                         <div className="blog-right-page-subtitle">A website for creating EIN through automation.</div>
                         <a className="sidebar-moving-link" href="https://einsolution.com">
 
-                            Click me
+                                                                   <div >
+      <Tooltip 
+        content="__________________"
+        imageUrl={einsolution}
+      >
+                              <u>  Click me</u>
+                            
+      </Tooltip>
+    </div>
                         </a>
                     </div>
 
                     <div className="circle">
                         <div className="circle-title">See my github profile</div>
                         <div className="circle-subtitle">ayush12993</div>
-                        <div className="circle-footer"><a className="circle-footer" href="https://github.com/ayush12993">Explore</a></div>
+                        <div className="circle-footer"><a className="circle-footer" href="https://github.com/ayush12993">
+                                       <div >
+      <Tooltip 
+        content="__________________"
+        imageUrl={githubprofile}
+      >
+                              <u>  Explore</u>
+                            
+      </Tooltip>
+    </div>
+                        </a></div>
                     </div>
                 </div>
             </div>

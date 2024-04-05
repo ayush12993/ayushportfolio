@@ -1,26 +1,53 @@
-import '../../css/app.css'
+import '../../css/app.css';
+import Tooltip from "../../component/tooltip/index";
+import nodejs from "../../images/nodejs.png";
+import laravel from "../../images/laravel.png";
+import wordpress from "../../images/wordpress.jpeg";
+import shopify from "../../images/shopify.svg";
+import woocommerce from "../../images/woocommerce.jpg";
+import webflow from "../../images/webflow.png";
+import einsolution from "../../images/einsolution.png";
+import chaturbhujhospital from "../../images/chaturbhujhospital.png";
+import githubprofile from "../../images/githubprofile.png";
+import ayush from "../../images/ayush.png";
+import linkedinprofile from "../../images/linkedinprofile.png";
 function Work(){
     return (
         <div className="blog">
-            <div className="blog-part is-menu">
-                <a href="/" className="blog-menu">Profile
-                    <svg fill="none" stroke="currentColor" stroke-width=".7" stroke-linecap="round" stroke-linejoin="round" className="feather feather-arrow-up-right" viewBox="0 0 24 24">
+                         <div className="blog-part is-menu">
+                <a href="/" className="blog-menu">About
+ <svg fill="none" stroke="currentColor" stroke-width=".7" stroke-linecap="round" stroke-linejoin="round" className="feather feather-arrow-up-right" viewBox="0 0 24 24">
                         <path d="M7 17L17 7M7 7h10v10" />
                     </svg>
                 </a>
                 <a href="/work" className="blog-menu">
                     Work
+                   
                 </a>
-                
+               
                 <a href="/contact" className="blog-menu">
                 Contact
                     <svg fill="none" stroke="currentColor" stroke-width=".7" stroke-linecap="round" stroke-linejoin="round" className="feather feather-arrow-up-right" viewBox="0 0 24 24">
                         <path d="M7 17L17 7M7 7h10v10" />
                     </svg>
-              
                 </a>
+
+<a href="https://www.linkedin.com/in/ayush-jain-654617145/" className="blog-menu ">
+                  <div >
+      <Tooltip 
+        content="_________________________________________"
+        imageUrl={linkedinprofile}
+      >
+                               <u> Profile  <svg fill="none" stroke="currentColor" stroke-width=".7" stroke-linecap="round" stroke-linejoin="round" className="feather feather-arrow-up-right" viewBox="0 0 24 24">
+                        <path d="M7 17L17 7M7 7h10v10" />
+                    </svg></u>
+                            
+      </Tooltip>
+    </div>
+                </a>
+
                 <a href="mailto:ayush2202ksr@gmail.com" className="blog-menu mention">✉ ayush.me</a>
-                <a href="https://www.linkedin.com/in/ayush-jain-654617145/" className="blog-menu subscribe">Profile</a>
+                
             </div>
 
             <div className="blog-header blog-is-sticky">

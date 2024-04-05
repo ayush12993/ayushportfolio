@@ -1,12 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Tooltip.css';
 
 const Tooltip = ({ children, content, imageUrl }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const [showImage, setShowImage] = useState(false);
 
   const toggleHover = () => {
     setIsHovered(!isHovered);
   };
+
+  useEffect(() => {
+    let imageTimeout;
+    if (isHovered) {
+      imageTimeout = setTimeout(() => {
+        setShowImage(true);
+      }, 250); // 3-second delay
+    } else {
+      setShowImage(false);
+    }
+    return () => clearTimeout(imageTimeout);
+  }, [isHovered]);
 
   return (
     <div className="tooltip-wrapper">
@@ -18,7 +31,7 @@ const Tooltip = ({ children, content, imageUrl }) => {
         {children}
       </div>
       {isHovered && (
-        <div className="tooltip">
+        <div className={`tooltip ${showImage ? 'show-image' : ''}`}>
           {imageUrl && <img src={imageUrl} alt="Tooltip" />}
           {content && <div>{content}</div>}
         </div>
