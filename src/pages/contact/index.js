@@ -17,7 +17,7 @@ const [formData, setFormData] = useState({
         e.preventDefault();
         
         try {
-            await axios.post('http://your-backend-url/send-email', formData);
+            await axios.post('https://ayushbackend-two.vercel.app/send-email', formData);
             alert('Email sent successfully!');
         } catch (error) {
             alert('Error sending email');
