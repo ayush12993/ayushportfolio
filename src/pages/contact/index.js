@@ -1,17 +1,29 @@
-import '../../css/app.css';
+import React, { useState } from 'react';
+import axios from 'axios';
 import Tooltip from "../../component/tooltip/index";
-import nodejs from "../../images/nodejs.png";
-import laravel from "../../images/laravel.png";
-import wordpress from "../../images/wordpress.jpeg";
-import shopify from "../../images/shopify.svg";
-import woocommerce from "../../images/woocommerce.jpg";
-import webflow from "../../images/webflow.png";
-import einsolution from "../../images/einsolution.png";
-import chaturbhujhospital from "../../images/chaturbhujhospital.png";
-import githubprofile from "../../images/githubprofile.png";
-import ayush from "../../images/ayush.png";
 import linkedinprofile from "../../images/linkedinprofile.png";
 function Contact(){
+const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: ''
+    });
+
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        
+        try {
+            await axios.post('http://your-backend-url/send-email', formData);
+            alert('Email sent successfully!');
+        } catch (error) {
+            alert('Error sending email');
+        }
+    };
+
     return (
         <div className="blog">
              <div className="blog-part is-menu">
@@ -80,10 +92,10 @@ function Contact(){
                             <span>5 Min Read</span>
                         </div>
                        If you are intrested in work please contact me. <br/>
-
-                        <input type="text" placeholder="Ayush Jain" className="input-collapsible"/>
-                        <input type="email" placeholder="ayush2202ksr@gmail.com" className="input-collapsible"/>
-                        <textarea type="text" placeholder="Enter your message here" className="input-collapsible"/>
+ <form onSubmit={handleSubmit}>
+                        <input name="name" type="text" placeholder="Ayush Jain" value={formData.name} onChange={handleChange} className="input-collapsible"/>
+                        <input name="email" type="email" placeholder="ayush2202ksr@gmail.com" value={formData.email} onChange={handleChange} className="input-collapsible"/>
+                        <textarea name="message" type="text" placeholder="Enter your message here"  value={formData.message} onChange={handleChange} className="input-collapsible"/>
                         <a className="not-big-screen-text" href="">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-corner-down-right" viewBox="0 0 24 24">
                                 <path d="M15 10l5 5-5 5" />
@@ -91,6 +103,7 @@ function Contact(){
                             </svg>
                             Contact me
                         </a>
+                        </form>
                     </div>
                 </div>
 
