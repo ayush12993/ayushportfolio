@@ -93,9 +93,9 @@ const [formData, setFormData] = useState({
                         </div>
                        If you are intrested in work please contact me. <br/>
  <form onSubmit={handleSubmit} id="emailSubmit">
-                        <input name="name" type="text" placeholder="Ayush Jain" value={formData.name} onChange={handleChange} className="input-collapsible"/>
-                        <input name="email" type="email" placeholder="ayush2202ksr@gmail.com" value={formData.email} onChange={handleChange} className="input-collapsible"/>
-                        <textarea name="message" type="text" placeholder="Enter your message here"  value={formData.message} onChange={handleChange} className="input-collapsible"/>
+                        <input name="name" type="text" placeholder="Your name" value={formData.name} onChange={handleChange} className="input-collapsible"/>
+                        <input name="email" type="email" placeholder="Your email" value={formData.email} onChange={handleChange} className="input-collapsible"/>
+                        <textarea name="message" type="text" placeholder="Enter your project idea"  value={formData.message} onChange={handleChange} className="input-collapsible"/>
                       <button type="submit">
   <a className="not-big-screen-text"  href="javascript:;" onclick="document.getElementById('emailSubmit').submit();">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-corner-down-right" viewBox="0 0 24 24">
