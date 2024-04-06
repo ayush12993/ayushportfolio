@@ -13,6 +13,14 @@ const [formData, setFormData] = useState({
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
+var formToSubmit = document.getDocumentById('emailSubmit');
+button = document.getElementById('submitButton');
+submitForm = function(e) {
+    e.preventDefault();
+    formToSubmit.submit();
+}
+
+button.addEventListener("click",submitForm);
     const handleSubmit = async (e) => {
         e.preventDefault();
         
@@ -96,13 +104,13 @@ const [formData, setFormData] = useState({
                            <input name="name" type="text" placeholder="Your name" value={formData.name} onChange={handleChange} className="input-collapsible"/>
                         <input name="email" type="email" placeholder="Your email" value={formData.email} onChange={handleChange} className="input-collapsible"/>
                         <textarea name="message" type="text" placeholder="Enter your project idea"  value={formData.message} onChange={handleChange} className="input-collapsible"/>
-                        <button className="not-big-screen-text"  href="javascript:;" onclick="document.getElementById('emailSubmit').submit();">
+                        <a id="submitButton" className="not-big-screen-text"  href="javascript:;" onclick="document.getElementById('emailSubmit').submit();">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-corner-down-right" viewBox="0 0 24 24">
                                 <path d="M15 10l5 5-5 5" />
                                 <path d="M4 4v7a4 4 0 004 4h12" />
                             </svg>
-                     ____________
-                        </button>
+                     Contact me
+                        </a>
                         </form>
                     </div>
                 </div>
