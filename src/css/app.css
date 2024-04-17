@@ -516,3 +516,8 @@ marquee span:before {
     margin-right: 0.5em; /* Add some spacing between list items */
     white-space: nowrap; /* Prevent line breaks */
   }
+
+
+  body {
+        font-family: 'Open Sans', sans-serif;
+    }

@@ -13,6 +13,16 @@ import ayush from "../../images/ayush.png";
 import linkedinprofile from "../../images/linkedinprofile.png";
 function Home(){
     return (
+
+        <div>
+        <div class="cursor"></div>
+<div class="shapes">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+</div>
+<div class="content">
+
         <div className="blog">
             <div className="blog-part is-menu">
                 <a href="/" className="blog-menu">About</a>
@@ -90,7 +100,7 @@ function Home(){
         <li>
                          <div >
       <Tooltip 
-        content="This is a node js image which is related to nodejs technology."
+        content="Why prefer node for its fast loading and vast library."
         imageUrl={nodejs}
       >
                                <u> NodeJS</u>
@@ -101,7 +111,7 @@ function Home(){
     <li>
                          <div >
       <Tooltip 
-        content="This is a laravel image which is related to laravel technology."
+        content="Why prefer laravel for its fast development time and most hosting support."
         imageUrl={laravel}
       >
                                <u> Laravel</u>
@@ -250,7 +260,9 @@ function Home(){
             </div>
 
         </div>
-    )
-}
+    
+</div>
+</div>
+)}
 
 export default Home

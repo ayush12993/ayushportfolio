@@ -33,7 +33,7 @@ const Tooltip = ({ children, content, imageUrl }) => {
       {isHovered && (
         <div className={`tooltip ${showImage ? 'show-image' : ''}`}>
           {imageUrl && <img src={imageUrl} alt="Tooltip" />}
-          {content && <div>{content}</div>}
+          {content && <div className="contentMax">{content}</div>}
         </div>
       )}
     </div>
